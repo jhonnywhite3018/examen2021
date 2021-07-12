@@ -41,6 +41,8 @@ AppAsset::register($this);
             ['label' => 'Uno', 'url' => ['/site/uno']],
             ['label' => 'Dos', 'url' => ['/site/dos']],
             ['label' => 'Tres', 'url' => ['/site/tres']],
+            ['label' => 'Ciudades', 'url' => ['/ciudades/index']],
+            
             
         ],
     ]);
