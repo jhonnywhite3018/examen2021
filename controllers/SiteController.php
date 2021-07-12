@@ -125,4 +125,20 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+    public function actionUno()
+    {
+        return $this->render('hola');
+    }
+    public function actionDos()
+    {
+        return $this->render('dos', ['texto'=>'ejemplo de camion']);
+    }
+    public function actionTres()
+    {
+        return $this->render('tres', 
+                [
+                    'texto'=>'ejemplo de camion',
+                    'numero'=> 2,
+                ]);
+    }
 }
