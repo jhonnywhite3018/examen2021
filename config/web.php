@@ -5,6 +5,8 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
+    'name' => 'Examen final de Yii2',//Puesto por mi
+    'language' => 'es_es',//Puesto por mi
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
