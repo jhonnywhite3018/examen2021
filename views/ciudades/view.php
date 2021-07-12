@@ -33,7 +33,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'nombre',
             'habitantes',
             'escudo',
-            'mapa',
+                         [
+                'label'=>'Cartel de la Pelicula',
+                'format'=>'raw',
+                'value' => function($modelo){
+                   return Html::img("@web/imgs/".$modelo->mapa,['alt'=>'yii']); 
+                }
+            ],
         ],
     ]) ?>
 

@@ -27,6 +27,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'nombre',
             'habitantes',
             'escudo',
+             [
+                'label'=>'Fotos',
+                'format'=>'raw',
+                'value' => function($modelo){
+                   return Html::img("@web/imgs/".$modelo->mapa,['alt'=>'yii']); 
+                }
+            ],
             'mapa',
 
             ['class' => 'yii\grid\ActionColumn'],
